@@ -1,0 +1,89 @@
+class Rectangle(object):
+    def __init__(self, ID, width = 0, lenght = 0, height=0, perimeter = 0, surfaceArea = 0, volume=0):
+        self.ID = ID
+        self.length=length
+        self.width=width
+        self.height=height
+        self.perimeter=perimeter
+        self.surfaceArea=surfaceArea
+        self.volume=volume
+height=0
+width=0
+length=0
+perimeter=0
+surfaceArea=0
+volume=0
+while height <=1:
+    height = int(input("Enter a height that is greater than 1: "))
+while width <= 1:
+    width = int(input("Enter a width that is greater than 1: "))
+while length <= 1:
+    length = int(input("Enter a length that is greater than 1: "))
+perimeter = (width+length+height)*4
+surfaceArea = (width*length+width*height+length*height)*2
+volume=(height*width*length)
+print("\n")
+rect1=Rectangle("1", width, length, height, perimeter, surfaceArea, volume)
+
+height=0
+width=0
+length=0
+perimeter=0
+surfaceArea=0
+volume=0
+while height <=1:
+    height = int(input("Enter a height that is greater than 1: "))
+while width <= 1:
+    width = int(input("Enter a width that is greater than 1: "))
+while length <= 1:
+    length = int(input("Enter a length that is greater than 1: "))
+perimeter = (width+length+height)*4
+surfaceArea = (width*length+width*height+length*height)*2
+volume=(height*width*length)
+print("\n")
+rect2=Rectangle("2", width, length, height, perimeter, surfaceArea, volume)
+
+height=0
+width=0
+length=0
+perimeter=0
+surfaceArea=0
+volume=0
+while height <=1:
+    height = int(input("Enter a height that is greater than 1: "))
+while width <= 1:
+    width = int(input("Enter a width that is greater than 1: "))
+while length <= 1:
+    length = int(input("Enter a length that is greater than 1: "))
+perimeter = (width+length+height)*4
+surfaceArea = (width*length+width*height+length*height)*2
+volume=(height*width*length)
+print("\n")                                       
+rect3=Rectangle("3", width, length, height, perimeter, surfaceArea,volume)
+print("Rectangle ID: "+rect1.ID)
+print("Height: "+str(rect1.height))
+print("Length: "+str(rect1.length))
+print("Width: "+str(rect1.width))
+print("Perimeter: "+str(rect1.perimeter))
+print("Surface Area: "+str(rect1.surfaceArea))
+print("Volume: "+str(rect1.volume))
+
+print("=========================================================================")
+
+print("Rectangle ID: "+rect2.ID)
+print("Height: "+str(rect2.height))
+print("Length: "+str(rect2.length))
+print("Width: "+str(rect2.width))
+print("Perimeter: "+str(rect2.perimeter))
+print("Surface Area: "+str(rect2.surfaceArea))
+print("Volume: "+str(rect2.volume))
+
+print("=========================================================================")
+
+print("Rectangle ID: "+rect3.ID)
+print("Height: "+str(rect3.height))
+print("Length: "+str(rect3.length))
+print("Width: "+str(rect3.width))
+print("Perimeter: "+str(rect3.perimeter))
+print("Surface Area: "+str(rect3.surfaceArea))
+print("Volume: "+str(rect3.volume))

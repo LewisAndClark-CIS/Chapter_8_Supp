@@ -1,0 +1,68 @@
+class Rectangle(object):
+    def __init__(self, ID, width = 0, length = 0, perimeter = 0, area = 0):
+        self.ID = ID
+        self.length=length
+        self.width=width
+        self.perimeter=perimeter
+        self.area=area
+
+
+width=0
+length=0
+perimeter=0
+area=0
+while width <= 1:
+    width = int(input("Enter a width that is greater than 1: "))
+while length <= width:
+    length = int(input("Enter a length that is greater than your width : "))
+perimeter = (width+length)*2
+area = width*length
+print("\n")
+rect1=Rectangle("1", width, length, perimeter, area)
+
+width=0
+length=0
+perimeter=0
+area=0
+while width <= 1:
+    width = int(input("Enter a width that is greater than 1: "))
+while length <= width:
+    length = int(input("Enter a length that is greater than your width : "))
+perimeter = (width+length)*2
+area = width*length
+print("\n")                                       
+rect2=Rectangle("2", width, length, perimeter, area)
+
+width=0
+length=0
+perimeter=0
+area=0
+while width <= 1:
+    width = int(input("Enter a width that is greater than 1: "))
+while length <= width:
+    length = int(input("Enter a length that is greater than your width : "))
+perimeter = (width+length)*2
+area = width*length
+print("\n")                    
+rect3=Rectangle("3", width, length, perimeter, area)
+print("Rectangle ID: "+rect1.ID)
+print("Length: "+str(rect1.length))
+print("Width: "+str(rect1.width))
+print("Perimeter: "+str(rect1.perimeter))
+print("Area: "+str(rect1.area))
+
+print("=========================================================================")
+
+print("Rectangle ID: "+rect2.ID)
+print("Length: "+str(rect2.length))
+print("Width: "+str(rect2.width))
+print("Perimeter: "+str(rect2.perimeter))
+print("Area: "+str(rect2.area))
+
+print("=========================================================================")
+
+print("Rectangle ID: "+rect3.ID)
+print("Length: "+str(rect3.length))
+print("Width: "+str(rect3.width))
+print("Perimeter: "+str(rect3.perimeter))
+print("Area: "+str(rect3.area))
