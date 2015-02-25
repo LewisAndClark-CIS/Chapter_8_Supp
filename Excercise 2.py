@@ -31,9 +31,6 @@ print(menu)
 
 option = input("\nWhat would you like to do? (0-3): ")
 
-listofboxes = []
-totalBoxes = 1
-
 while option != "3":
 
     
@@ -47,17 +44,12 @@ while option != "3":
             prism = Create_Prism(length, width, height, ID)
             listofboxes.append(prism)
         elif totalBoxes == 2:
-            rectangle_2 = Create_Prism(length, width, height, ID)
+            prism_2 = Create_Prism(length, width, height, ID)
             listofboxes.append(prism_2)
         elif totalBoxes == 3:
-            rectangle_3 = Create_Prism(length, width, height, ID)
+            prism_3 = Create_Prism(length, width, height, ID)
             listofboxes.append(prism_3)
-
         totalBoxes += 1
-        print(menu)
-        option = input("\nWhat would you like to do? (0-3): ")
-
-
     if option == "1":
         thisIsTrue = 1
         while thisIsTrue:
@@ -71,14 +63,12 @@ while option != "3":
                 thisIsTrue = False
             except (IndexError, ValueError):
                 print("That prism does not exist.")
-
-
-        print(menu)
-        choice = input("\nWhat would you like to do?: ")
-
     if option == "2":
-        for i in listofboxes:
-            print(i)
+        if listofboxes:
+            for i in listofboxes:
+                print(i)
+        else:
+            print("There are no boxes to print")
 
     print(menu)
     option = input("\nWhat would you like to do?: ")
