@@ -11,8 +11,7 @@ class Create_Prism(object):
         strprint = "\nPrism ID: " + str(self.ID) + " units\n"
         strprint += "Length: "+ str(self.length) + " units\n"
         strprint += "Width: " + str(self.width) + " units\n"
-        strprint += "Permimeter: " + str((self.width * 2) + (self.length * 2)) + " units\n"
-        strprint += "Area: " + str((self.width) * (self.length)) + " units\n"
+        strprint += "Surface Area: " + str(2 * ((self.width * self.length) + (self.height * self.length) + (self.height * self.width))) + " units\n"
         strprint += "Volume: " + str((self.height) * (self.width) * (self.length)) + " units"
         strprint += "\n"
         return strprint

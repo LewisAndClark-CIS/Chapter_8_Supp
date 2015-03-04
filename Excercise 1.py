@@ -47,7 +47,7 @@ while option != "3":
         while thisIsTrue:
             try:
                 if listofboxes:
-                    print("There are " + str(len(listofboxes)) + " boxes already created.\n")
+                    print("There are " + str(len(listofboxes)) + " box(es) already created.\n")
                     the_rect = int(input("Which one, (0-3) 0 being the first: "))
                     print(listofboxes[the_rect])
                     thisIsTrue = False
