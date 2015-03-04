@@ -20,7 +20,7 @@ class Prism(object):
         the_string += "\tWidth: " + str(self.w) + "\n"
         the_string += "\tHeight: " + str(self.h) + "\n"
         the_string += "\tSurface Area: " + str(2 * (self.l *self.w) + ((2*self.l + 2*self.w) * self.h)) + "\n"
-        the_string += "\tPerimeter: " + str((2 *(2*self.l + 2*self.w)) + (4 * self.h)) + "\n"
+#        the_string += "\tPerimeter: " + str((2 *(2*self.l + 2*self.w)) + (4 * self.h)) + "\n" ////////////////3D objects dont have perimeter
         the_string += "\tVolume: " + str(self.l * self.w * self.h) 
         print()
         
